@@ -1,0 +1,56 @@
+{
+  "contacts": [
+    {
+      "id": "AS03",
+      "name": "Bob Smith",
+      "photo": "https://th.bing.com/th/id/OIP.x7X2oAehk5M9IvGwO_K0PgHaHa?w=218&h=219&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "mobile": "8965896578",
+      "email": "bib@gmail.com",
+      "title": "CFO",
+      "company": "ABC Company",
+      "group": "3"
+    },
+    {
+      "id": "AS04",
+      "name": "Mike Jones",
+      "photo": "https://www.shareicon.net/data/512x512/2016/08/05/806962_user_512x512.png",
+      "mobile": "7418522563",
+      "email": "mike@gmail.com",
+      "title": "COO",
+      "company": "ABC Company",
+      "group": "4"
+    },
+    {
+      "name": "Adarsh Singh",
+      "photo": "https://www.shareicon.net/data/512x512/2016/08/05/806962_user_512x512.png",
+      "mobile": "8956895685",
+      "email": "adarsh@gmail.com",
+      "company": "Hcl Technologies",
+      "title": "Software Trainee",
+      "group": "2",
+      "id": "DXoqM2p"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Friends"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Work"
+    },
+    {
+      "id": "4",
+      "name": "Colleague"
+    },
+    {
+      "id": "5",
+      "name": "Other"
+    }
+  ]
+}
