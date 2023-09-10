@@ -93,13 +93,13 @@ const ContactList = () => {
                                 <form className='row' >
                                     <div className='col'>
                                         <div className="mb-2">
-                                            <input type="text" name='text' value={query.text} onChange={searchContacts} className='form-control' placeholder='Search Contacts...' />
+                                            <input type="text" name='text' value={query.text} onChange={searchContacts} className='form-control shadow-sm' placeholder='Search Contacts...' />
 
                                         </div>
                                     </div>
-                                    <div className="col">
+                                    <div className="col ">
                                         <div className="mb-2">
-                                            <input type="submit" className='btn btn-outline-dark' value='Search' />
+                                            <input type="submit" className='btn btn-outline-dark shadow-sm' value='Search' />
                                         </div>
                                     </div>
                                 </form>
@@ -123,15 +123,15 @@ const ContactList = () => {
                                             <div className="card-body">
                                                 <div className="row d-flex align-items-center ">
                                                     <div className="col-md-4">
-                                                        <img src={contact.photo} className='img-fluid ' height={150} width={150} alt="" />
+                                                        <img src={contact.photo} className='contact-img'alt="" />
                                                     </div>
                                                     <div className="col-md-7 ">
                                                         <ul className='list-group'>
-                                                            <li className='list-group-item list-group-item-action'>Name : <span className='text-secondary'>{contact.name}</span>
+                                                            <li className='list-group-item list-group-item-action'>Name : <span className='text-success'>{contact.name}</span>
                                                             </li>
-                                                            <li className='list-group-item'>Mobile : <span className='text-secondary'>{contact.mobile}</span>
+                                                            <li className='list-group-item'>Mobile : <span className='text-success'>{contact.mobile}</span>
                                                             </li>
-                                                            <li className='list-group-item'>Email : <span className='text-secondary'>{contact.email}</span>
+                                                            <li className='list-group-item'>Email : <span className='text-success'>{contact.email}</span>
                                                             </li>
                                                         </ul>
                                                     </div>

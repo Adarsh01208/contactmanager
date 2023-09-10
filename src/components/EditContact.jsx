@@ -67,13 +67,11 @@ const EditContact = () => {
         }
     }
 
-
     let { loading, contacts, error, groups } = state;
-
 
     return (
         <>
-            <pre>{JSON.stringify(contacts)}</pre>
+            {/* <pre>{JSON.stringify(contacts)}</pre> */}
             <div className="container mt-4">
                 <div className="row">
                     <div className="col">
@@ -81,26 +79,21 @@ const EditContact = () => {
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi delectus temporibus accusamus natus sed at commodi numquam odio sit, itaque distinctio corporis dignissimos deserunt, quas dolor, ipsa magnam? Eligendi, dolor?</p>
                     </div>
                 </div>
-
                 <div className="row align-items-center">
                     <div className="col-md-4">
                         <form onSubmit={submitUpdate}>
                             <div className='mb-2'>
-
                                 <input type="text" required={true} name='name' onChange={updateInput} value={contacts.name} className='form-control' placeholder='Name' />
                             </div>
                             <div className='mb-2'>
                                 <input type="text" required={true} name='photo' onChange={updateInput} value={contacts.photo} className='form-control' placeholder='Photo Url' />
                             </div>
-
                             <div className='mb-2'>
                                 <input type="number" required={true} name='mobile' onChange={updateInput} value={contacts.mobile} className='form-control' placeholder='Mobile No' />
                             </div>
-
                             <div className='mb-2'>
                                 <input type="email" required={true} name='email' onChange={updateInput} value={contacts.email} className='form-control' placeholder='Email' />
                             </div>
-
                             <div className='mb-2'>
                                 <input type="text" required={true} name='company' onChange={updateInput} value={contacts.company} className='form-control' placeholder='Company' />
                             </div>
@@ -128,16 +121,13 @@ const EditContact = () => {
                         </form>
                     </div>
                     <div className="col-md-6 ">
-                        <img src="https://www.shareicon.net/data/512x512/2016/08/05/806962_user_512x512.png" className='img-fluid' height={250} width={250} alt="" />
+                        <img src={contacts.photo} className='contact-img' alt="" />
                     </div>
 
                 </div>
             </div>
-
-
-
         </>
     )
 }
 
-export default EditContact
+export default EditContact;

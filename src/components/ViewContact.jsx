@@ -11,11 +11,7 @@ const ViewContact = () => {
         contacts: [],
         error: '',
         group: ''
-    })
-
-    useEffect(() => {
-        fetchbyid();
-    }, []);
+    });
 
     const fetchbyid = async () => {
         try {
@@ -30,20 +26,20 @@ const ViewContact = () => {
         }
     }
 
+    useEffect(() => {
+        fetchbyid();
+    }, []);
+
     let { loading, contacts, error, group } = state;
-
-
-
-
 
     return (
         <>
-            <h1>{id}</h1>
+            {/* <h1>{id}</h1> */}
             <section className='view-contact-intro'>
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <p className='text-success h1'>Create Contact</p>
+                            <p className='text-success h1'>View Contact</p>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi delectus temporibus accusamus natus sed at commodi numquam odio sit, itaque distinctio corporis dignissimos deserunt, quas dolor, ipsa magnam? Eligendi, dolor?</p>
                         </div>
                     </div>
@@ -54,8 +50,8 @@ const ViewContact = () => {
                 <section className='view-contact mt-5'>
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-4  ">
-                                <img src={contacts.photo} className='img-fluid' height={250} width={250} alt="" />
+                            <div className="col-md-4">
+                                <img src={contacts.photo} className='contact-img' alt="" />
                             </div>
                             <div className="col-md-7">
                                 <ul className='list-group'>
